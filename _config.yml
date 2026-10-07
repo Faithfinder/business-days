@@ -1,0 +1,10 @@
+# Public pages for the Marketplace listing (privacy policy, terms, support).
+# Served by GitHub Pages from the main branch of this public repo.
+title: Business Days & Holidays for Jira
+description: Due dates that skip weekends, public holidays and your company's days off.
+
+# Edit these three lines; every page picks them up.
+vendor: Dmitrii Kartashev
+location: Ottawa, Canada
+support_email: TODO-support@example.com
+updated: October 6, 2026
