@@ -3,8 +3,9 @@
 title: Business Days & Holidays for Jira
 description: Due dates that skip weekends, public holidays and your company's days off.
 
-# Edit these three lines; every page picks them up.
+# Edit these lines; every page picks them up.
 vendor: Dmitrii Kartashev
 location: Ottawa, Canada
 support_email: support@faithfinder.atlassian.net
+marketplace_url: https://marketplace.atlassian.com/apps/566776470/business-days-holidays-for-jira
 updated: October 6, 2026

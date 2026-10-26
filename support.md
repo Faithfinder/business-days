@@ -6,6 +6,8 @@ title: Support
 
 Email **[{{ site.support_email }}](mailto:{{ site.support_email }})**. We reply within 2 business days.
 
+Don't have the app yet? [Get it on the Atlassian Marketplace]({{ site.marketplace_url }}).
+
 {% raw %}
 ## Quick start
 
