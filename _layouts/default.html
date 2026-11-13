@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+{% seo %}
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F0E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<!-- The stylesheet, favicon and painting come from the user site (Faithfinder/faithfinder.github.io),
+     which serves the root of projects.dkartashev.dev. This site is served under it at /{{ site.slug }}/. -->
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+{%- assign here = page.name | remove: ".md" | remove: ".html" -%}
+<div class="layout">
+  <div class="content">
+    <header class="top">
+      <a class="seal" href="/" aria-label="All projects">DK</a>
+      <nav class="crumb" aria-label="Breadcrumb">
+        <a href="/">dkartashev.dev/projects</a>/{% if here == "index" %}<b aria-current="page">{{ site.slug }}</b>{% else %}<a href="{{ '/' | relative_url }}">{{ site.slug }}</a>/<b aria-current="page">{{ here }}</b>{% endif %}
+      </nav>
+    </header>
+    <main class="prose">
+{{ content }}
+    </main>
+    <nav class="foot" aria-label="Site">
+      <a href="/">← All projects</a>
+      <a href="{{ '/' | relative_url }}"{% if here == "index" %} aria-current="page"{% endif %}>{{ site.slug }}</a>
+      <a href="{{ '/support' | relative_url }}"{% if here == "support" %} aria-current="page"{% endif %}>Support</a>
+      <a href="{{ '/privacy' | relative_url }}"{% if here == "privacy" %} aria-current="page"{% endif %}>Privacy</a>
+      <a href="{{ '/terms' | relative_url }}"{% if here == "terms" %} aria-current="page"{% endif %}>Terms</a>
+      <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>
+    </nav>
+  </div>
+  <div class="panel" aria-hidden="true">
+    <div class="panel-inner">
+      <picture>
+        <source media="(max-width: 860px)" srcset="/assets/painting-band.svg">
+        <img class="scene" src="/assets/painting.svg" alt="" width="560" height="900">
+      </picture>
+    </div>
+  </div>
+</div>
+</body>
+</html>

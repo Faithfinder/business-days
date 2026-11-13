@@ -2,6 +2,16 @@
 # Served by GitHub Pages from the main branch of this public repo.
 title: Business Days & Holidays for Jira
 description: Due dates that skip weekends, public holidays and your company's days off.
+# Served at projects.dkartashev.dev/<slug>/. _layouts/default.html styles every page with the shared
+# stylesheet from the user site (Faithfinder/faithfinder.github.io, /assets/site.css).
+slug: business-days
+plugins:
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 # Edit these lines; every page picks them up.
 vendor: Dmitrii Kartashev
